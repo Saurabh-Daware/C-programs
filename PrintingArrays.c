@@ -11,12 +11,12 @@ int main(void){
        printf("Enter element no.%d: ",i+1);                     //taking array from user
        scanf("%d",ptr+i);
    }
-   printf("\n");
-   printf("=============================================\n");
+   printf("\n=============================================\n");
    printf("your array is: \n");
    for(int i = 0; i < n; i++){
+       if(i == 0){printf("[");}
        printf(" %d ",arr[i]);                                   //printing array
    }
-   printf("\n");
-    printf("=============================================\n");
+        printf("]");
+    printf("\n=============================================\n");
 }
