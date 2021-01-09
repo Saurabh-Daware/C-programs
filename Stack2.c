@@ -110,6 +110,8 @@ int main(void)
         case 5:
             printf("Thank you for using this program!");
             return 0;
+        default:
+            printf("Enter correct value");
         }
     } while (1);
 }
