@@ -14,6 +14,6 @@ int main(void){
 
     if(timeOfDay >= 06 && timeOfDay < 12){printf("Good Morning, %s!!",name);}
     else if(timeOfDay >= 12 && timeOfDay < 17){printf("Good Afternoon, %s!!",name);}
-    else if(timeOfDay >= 17 && timeOfDay < 22){printf("Good Morning, %s!!",name);}
+    else if(timeOfDay >= 17 && timeOfDay < 22){printf("Good Evening, %s!!",name);}
     else {printf("Good Night, %s!!",name);}
 }
