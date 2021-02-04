@@ -1,23 +1,33 @@
 #include <stdio.h>
+#include <string.h>
 
-void Check(char text [], int len);
+void Check(char text[], int len);
 
-int main(void){
-	char text [100];
-    printf("Enter text: ");
-    gets(text);
-	int len = 0;
-	while(text[len] != '\0'){
-		len++;
-	}
-	Check(text,len);	
+int main(void)
+{
+	char text[100];
+	printf("Enter text: ");
+	gets(text);
+	int len = strlen(text);
+	Check(text, len);
 }
 
-void Check(char text [], int len){
-		
-	if(text[0] != text[len-1]) {
-		printf("String is not a palindrome");
-	} else {
+void Check(char text[], int len)
+{
+	int isPalindrome = 0;
+
+	for (int i = 0; i < len; ++i)
+	{
+		if (text[i] != text[len - i - 1])
+		{
+			isPalindrome = 1;
+		}
+	}
+
+	if (isPalindrome == 0)
+	{
 		printf("String is a palindrome");
 	}
+	else
+		printf("String is not a palindrome");
 }
